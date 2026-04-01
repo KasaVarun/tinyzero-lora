@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import ast; ast.parse\\(open\\(''part1_tinyzero/inference.py''\\).read\\(\\)\\); print\\(''inference.py: OK''\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\(''part1_tinyzero/modal_inference.py''\\).read\\(\\)\\); print\\(''modal_inference.py: OK''\\)\")"
+    ]
+  }
+}
