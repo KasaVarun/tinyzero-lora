@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python part1_tinyzero/data/countdown.py)",
+      "Bash(pip install:*)",
+      "Bash(python -c \"import datasets; print\\(datasets.__version__\\)\")",
+      "Bash(pip --version)",
+      "Bash(pip show:*)",
+      "Bash(/c/Users/varun2002/anaconda3/python.exe -c \"import datasets; print\\(''OK''\\)\")",
+      "Bash(/c/Users/varun2002/anaconda3/python.exe part1_tinyzero/data/countdown.py)",
+      "Bash(/c/Users/varun2002/anaconda3/python.exe part1_tinyzero/train_lora.py --dry-run)",
+      "Bash(/c/Users/varun2002/anaconda3/python.exe -c \"from trl import GRPOConfig; import inspect; sig = inspect.signature\\(GRPOConfig.__init__\\); print\\([p for p in sig.parameters.keys\\(\\) if ''max'' in p or ''prompt'' in p or ''completion'' in p or ''generation'' in p or ''temperature'' in p or ''num_gen'' in p]\\)\")",
+      "Bash(/c/Users/varun2002/anaconda3/python.exe -c \"from trl import GRPOTrainer; import inspect; sig = inspect.signature\\(GRPOTrainer.__init__\\); print\\(list\\(sig.parameters.keys\\(\\)\\)\\)\")",
+      "Bash(/c/Users/varun2002/anaconda3/python.exe -c \":*)",
+      "Bash(taskkill //F //IM python.exe)",
+      "Bash(/c/Users/varun2002/anaconda3/python.exe -c \"import modal; print\\(''modal'', modal.__version__\\)\")",
+      "Bash(/c/Users/varun2002/anaconda3/python.exe -m pip install modal)",
+      "Bash(/c/Users/varun2002/anaconda3/python.exe -c \"import ast; ast.parse\\(open\\(''part1_tinyzero/modal_train.py''\\).read\\(\\)\\); print\\(''modal_train.py: syntax OK''\\)\")",
+      "Bash(modal run:*)",
+      "Bash(/c/Users/varun2002/anaconda3/python.exe -c \"import modal; print\\(modal.__version__\\); print\\([x for x in dir\\(modal\\) if ''ount'' in x or ''mount'' in x.lower\\(\\)]\\)\")",
+      "Bash(PYTHONIOENCODING=utf-8 modal run part1_tinyzero/modal_train.py)"
+    ]
+  }
+}

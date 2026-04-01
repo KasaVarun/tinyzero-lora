@@ -1,0 +1,11 @@
+outputs/
+__pycache__/
+*.pyc
+.env
+*.toml
+part1_tinyzero/data/processed/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
