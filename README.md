@@ -117,3 +117,16 @@ The model learns to:
 - **GRPO** uses group-relative rewards instead of a separate value model
 - Reward = correctness (1.0) + format compliance (0.1)
 - Safe equation evaluation via AST parsing (no `eval()` on raw strings)
+
+## Results
+
+| Metric | Result |
+|---|---|
+| Output-format compliance | **100.0%** (200/200) |
+| Task accuracy | **0.5%** (1/200) |
+| Trainable parameters | 4.36M of 1.55B (**0.28%**) |
+
+Format compliance reached 100%. Task accuracy stayed near zero, which is the
+expected outcome at 250 steps — roughly 0.1% of one epoch over the 441k-example
+dataset. See [RESULTS.md](RESULTS.md) for the full analysis and
+[REPORT.md](REPORT.md) for the write-up.
